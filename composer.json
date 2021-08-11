@@ -1,0 +1,13 @@
+{
+  "name": "linked-lists",
+  "authors": [
+    {
+      "name": "Vladimir988"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "LinkedList\\": "src/"
+    }
+  }
+}
