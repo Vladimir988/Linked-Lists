@@ -20,3 +20,17 @@ $sLinkedList->update('Canada', 'Ukraine');
 $sLinkedList->display(); // China Japan Australia
 $sLinkedList->clear();
 $sLinkedList->display(); // Linked list is empty!
+echo '<br><br>';
+
+/**
+ * DoubleLinkedList
+ */
+$dLinkedList = new DoubleLinkedList('header');
+$dLinkedList->insert('header', 'China');
+$dLinkedList->insert('China', 'USA');
+$dLinkedList->insert('USA','England');
+$dLinkedList->insert('England','Australia');
+$dLinkedList->display(); // China USA England Australia
+$dLinkedList->delete('USA');
+$dLinkedList->display(); // China USA
+echo '<br><br>';
