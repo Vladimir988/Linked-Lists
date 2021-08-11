@@ -34,3 +34,18 @@ $dLinkedList->display(); // China USA England Australia
 $dLinkedList->delete('USA');
 $dLinkedList->display(); // China USA
 echo '<br><br>';
+
+/**
+ * CircularLinkedList
+ */
+$sLinkedList = new CircularLinkedList('header');
+$sLinkedList->insert('header', 'China');
+$sLinkedList->insert('China', 'USA');
+$sLinkedList->insert('USA', 'England');
+$sLinkedList->insert('England', 'Australia');
+$sLinkedList->display(); // China USA England Australia
+$sLinkedList->delete('USA');
+$sLinkedList->display(); // China England Australia
+$sLinkedList->delete('Australia');
+$sLinkedList->display(); // China England
+echo '<br><br>';
